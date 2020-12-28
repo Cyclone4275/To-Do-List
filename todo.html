@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="to-do-header">
+      <h1>To-Do List</h1>
+      <div class="to-do-header__subtitle">
+        <h2>To-Do List for The Dream</h2>
+      </div>
+    </div>
+    <main>
+      <div class="menu">
+        <div class="to-do-menu">
+          <span class="to-do-title">To-Do List </span>
+          <button id="modal_opne_btn" class="to-do-add">Add to-do</button>
+          <button class="to-do-sort">Sort to-do</button>
+        </div>
+        <div class="done-menu">
+          <span>Done List</span>
+        </div>
+      </div>
+      <div class="list-container">
+        <div class="to-do__list">
+          <ul>
+            <li>
+              <span class="to-do__title"
+                >Make To-Do
+                Listasdfasdfasdfasdfasdfasdfasdfasdfasdfasfasdfasdfasdfasdf
+              </span>
+              <span class="to-do__duedate">Due date : 20. 12. 23.</span>
+              <span class="to-do__importance">3</span>
+              <button class="to-do__checkbtn">V</button>
+            </li>
+            <li>
+              <span class="to-do__title">Make To-Do List</span>
+              <span class="to-do__duedate">Due date : 20. 12. 23.</span>
+              <span class="to-do__importance">3</span>
+              <button class="to-do__checkbtn">V</button>
+            </li>
+            <li>
+              <span class="to-do__title">Make To-Do List</span>
+              <span class="to-do__duedate">Due date : 20. 12. 23.</span>
+              <span class="to-do__importance">3</span>
+              <button class="to-do__checkbtn">V</button>
+            </li>
+            <li>
+              <span class="to-do__title">Make To-Do List</span>
+              <span class="to-do__duedate">Due date : 20. 12. 23.</span>
+              <span class="to-do__importance">3</span>
+              <button class="to-do__checkbtn">V</button>
+            </li>
+          </ul>
+        </div>
+        <div class="done__list">
+          <ul>
+            <li>
+              <span>Make To-Do List</span>
+              <button>X</button>
+            </li>
+            <li>
+              <span>Play LoL</span>
+              <button>X</button>
+            </li>
+            <li>
+              <span>Watching Kokoa Talk clone coding</span>
+              <button>X</button>
+            </li>
+            <li>
+              <span>what the hell</span>
+              <button>X</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <div id="modal">
+      <div class="modal_content">
+        <form class="modal-create-form">
+          <div class="modal-content">
+            <label>To Do</label>
+            <input
+              class="modal-content__title"
+              type="text"
+              name="create-title"
+            /><br />
+          </div>
+          <div class="modal-content">
+            <label>Importance</label>
+            <span class="modal-content__importance">3</span
+            ><input type="radio" name="create-importance" value="3" />
+            <span class="modal-content__importance">2</span
+            ><input type="radio" name="create-importance" value="2" />
+            <span class="modal-content__importance">1</span
+            ><input type="radio" name="create-importance" value="1" /><br />
+          </div>
+          <div class="modal-content">
+            <label>Due date.</label>
+            <input
+              class="modal-content__duedate"
+              type="datetime-local"
+              name="create-duedate"
+            /><br />
+          </div>
+        </form>
+        <div class="modal-close-btn">
+          <button type="button" id="modal_close_btn">Add To Do !</button>
+        </div>
+      </div>
+      <div class="modal_layer"></div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

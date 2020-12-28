@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1556607173-eca49c3c4f47?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80);
+  background-repeat: no-repeat;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.to-do-header {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 50px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.to-do-header__subtitle {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 25px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 23px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 400px;
+  margin-bottom: 10px;
+}
+
+.to-do-add {
+  margin-left: 100px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.to-do-sort {
+  font-family: "Luckiest Guy", cursive;
+}
+.to-do-menu {
+  margin-top: 20px;
+}
+
+.done-menu {
+  margin-right: 250px;
+  margin-top: 20px;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.to-do__list {
+  display: flex;
+  justify-content: center;
+  margin-left: 350px;
+}
+
+.to-do__list li {
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.to-do__list button {
+  border-color: black;
+  background-color: black;
+  color: white;
+  border-radius: 30%;
+  align-content: center;
+  margin-bottom: 5px;
+}
+
+.to-do__list button:focus {
+  border-color: white;
+  background-color: white;
+  color: black;
+  outline: none;
+}
+
+.to-do__title {
+  display: inline-block;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.to-do__duedate {
+  font-size: 15px;
+}
+
+.to-do__importance {
+  font-size: 20px;
+}
+
+.done__list {
+  margin-right: 350px;
+}
+
+.done__list li {
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.done__list button {
+  border-color: black;
+  background-color: black;
+  color: white;
+  border-radius: 30%;
+  align-content: center;
+  margin-bottom: 5px;
+}
+
+.done__list button:focus {
+  border-color: white;
+  background-color: white;
+  color: black;
+  outline: none;
+}
+
+#modal {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  vertical-align: middle;
+  margin-top: -500px;
+}
+
+#modal .modal_content {
+  height: 300px;
+  width: 500px;
+  margin: 100px auto;
+  padding: 20px 10px;
+  background: #fff;
+  border: 2px solid #666;
+}
+
+#modal .modal_layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.modal-content {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.modal-create-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-content label {
+  margin-left: 30px;
+}
+
+.modal-content__title {
+  margin-left: 20px;
+  width: 300px;
+}
+
+.modal-content__importance {
+  margin-left: 20px;
+}
+
+.modal-content__duedate {
+  margin-left: 30px;
+}
+
+.modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal_close_btn {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 20px;
+}
