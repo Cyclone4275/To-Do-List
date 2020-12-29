@@ -208,6 +208,10 @@ body {
   font-size: 20px;
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -225,4 +229,54 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+.js-toDoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.js-toDoForm__title {
+  font-family: "Black Han Sans", sans-serif;
+  border: none;
+  padding: 10px 80px;
+  font-size: 30px;
+}
+
+.js-toDoForm__date {
+  font-family: "Black Han Sans", sans-serif;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.js-toDoForm__title::placeholder {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 30px;
+}
+
+li > span {
+  margin-top: 10px;
+}
+
+li > button {
+  margin-right: 10px;
+}
+
+.js-clock {
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+
+.js-toDoList {
+  color: white;
+  font-size: 25px;
+  font-family: "Black Han Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
